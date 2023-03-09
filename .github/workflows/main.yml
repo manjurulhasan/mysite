@@ -1,0 +1,10 @@
+name: Pipeline Test
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Copy file via scp
